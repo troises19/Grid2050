@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+</style>
+</head>
+<body>
+
+<h1>Explore Time Dynamics</h1>
+Please click on the instructions below to read more about this step in the tool and how to explore time dynamics.
+<details>
+  <summary>Instructions</summary>
+<p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'><span style="color:black;">So far the tool has been assuming that the cost and performance of each technology will stay fixed and will not change in the future. In most cases that will not be true.</span></p>
+<p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'><span style="color:black;">&nbsp;</span></p>
+<p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'>In this part of the tool you have three sliders that you can adjust for each technology: a learning rate, a retirement rate, and again an adoption rate.</p>
+<p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+<p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'>The <strong>Learning Rate</strong> for each technology is the change in cost for every doubling of capacity. For example, a learning rate of 10% would mean that the cost of a technology decreases 10% every time the capacity doubles. Here is a table of some examples of past learning rates:</p>
+<div align="center" style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'>
+    <table style="border-collapse:collapse;border:none;">
+        <tbody>
+            <tr>
+                <td style="width: 88pt;border: 1pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'>Technology</p>
+                </td>
+                <td style="width: 83.75pt;border-top: 1pt solid windowtext;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'>Learning Rate</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 88pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'>CCS</p>
+                </td>
+                <td style="width: 83.75pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;text-align:center;'>2-20%</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 88pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'>Hydropower</p>
+                </td>
+                <td style="width: 83.75pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;text-align:center;'>0.5-11.4%</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 88pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'>Nuclear</p>
+                </td>
+                <td style="width: 83.75pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;text-align:center;'>Negative-6%</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 88pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'>Offshore Wind</p>
+                </td>
+                <td style="width: 83.75pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;text-align:center;'>5-19%</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 88pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'>Onshore Wind</p>
+                </td>
+                <td style="width: 83.75pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;text-align:center;'>-11-32%</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 88pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'>Solar PV</p>
+                </td>
+                <td style="width: 83.75pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;text-align:center;'>10-47%</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+<p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'>The <strong>retirement rate</strong> is the fraction of a technology that must be retired in each year period because it has grown too old. For example, a retirement rate of 5% means that 5% of the that exited in the previous year technology will be retired. &nbsp; Retirement rates are particularly relevant to older systems like nuclear plants and some of the older wind and solar plants.</p>
+<p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+<p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'>While your previous choices implied an <strong>adoption rate</strong> for each technology, the third slider on this page now allows you to change that earlier assumption An adoption rate of 5% means that the amount of a given technology increases 5% every year. Whatever adoption rate you select will be applied <em>along with</em> any retirement that occurs. So the difference between the retirement rate and the adoption rate is the amount a technology will grow annually.&nbsp;</p>
+<p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+<p style='margin:0in;font-size:16px;font-family:"Calibri",sans-serif;'><span style="color:#333333;">Examining the figure, please continue to make adjustments until you have achieved a solution that you consider feasible.&nbsp;</span></p>
+</details>
+
+</body>
+</html>
