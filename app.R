@@ -7,12 +7,12 @@
 #The below packages are needed to run the app
 library(shiny)
 library(shinydashboard)
-library(readxl)
 library(ggplot2)
 
 # Data is imported from an external excel spreadsheet
 data <- read_csv("ToolData.csv")
 
+US_demand <- 4243
 #Creates a dataframe format to be used in the tool
 data <- as.data.frame(data)
 
@@ -298,7 +298,7 @@ server <- function(input, output, session) {
     cleanData <- as.data.frame(cleanData)
     
     #Demand goal as set by user using growth rate
-    demand <- (4243 * (1 + (input$demand/100))^25) * (input$goal/100)
+    demand <- (US_demand * (1 + (input$demand/100))^25) * (input$goal/100)
     
     demandData <- data.frame(demand = demand,
                              Goal = "2050 Goal Demand")
@@ -350,7 +350,7 @@ server <- function(input, output, session) {
     #Initalize reactive dataset
       cleanData <- toolData()
     #Demand set by user goals 
-      demand <- (4243 * (1 + (input$demand/100))^25) * (input$goal/100)
+      demand <- (US_demand * (1 + (input$demand/100))^25) * (input$goal/100)
       demandData <- data.frame(demand = demand,
                                Goal = "2050 Goal Demand")
       cleanData <- as.data.frame(cleanData)
@@ -391,7 +391,7 @@ server <- function(input, output, session) {
     #Initalize reactive data
     cleanData <- toolData()
     #Demand goal set by user
-    demand <- (4243 * (1 + (input$demand/100))^25) * (input$goal/100)
+    demand <- (US_demand * (1 + (input$demand/100))^25) * (input$goal/100)
     demandData <- data.frame(demand = demand,
                              Goal = "2050 Goal Demand")
     cleanData <- as.data.frame(cleanData)
@@ -431,7 +431,7 @@ server <- function(input, output, session) {
     output$errorPlot <- renderPlot({
       #Initialize reactive data
       cleanData <- toolData()
-      demand <- (4243 * (1 + (input$demand/100))^25) * (input$goal/100)
+      demand <- (US_demand * (1 + (input$demand/100))^25) * (input$goal/100)
       demandData <- data.frame(demand = demand,
                                Goal = "2050 Goal Demand")
       cleanData <- as.data.frame(cleanData)
@@ -473,7 +473,7 @@ server <- function(input, output, session) {
       #initialize reactive data
       cleanData <- toolData()
       #Demand goal set by user
-      demand <- (4243 * (1 + (input$demand/100))^25) * (input$goal/100)
+      demand <- (US_demand * (1 + (input$demand/100))^25) * (input$goal/100)
       demandData <- data.frame(demand = demand,
                                Goal = "2050 Goal Demand")
       cleanData <- as.data.frame(cleanData)
@@ -514,7 +514,7 @@ server <- function(input, output, session) {
       #Initalize reactive data
       cleanData <- toolData()
       #Demand goal set by user
-      demand <- (4243 * (1 + (input$demand/100))^25) * (input$goal/100)
+      demand <- (US_demand * (1 + (input$demand/100))^25) * (input$goal/100)
       demandData <- data.frame(demand = demand,
                                Goal = "2050 Goal Demand")
       cleanData <- as.data.frame(cleanData)
@@ -568,7 +568,7 @@ server <- function(input, output, session) {
     #Initalize reactive data
     cleanData <- toolData()
     #User demand goal
-    demand <- (4243 * (1 + (input$demand/100))^25) * (input$goal/100)
+    demand <- (US_demand * (1 + (input$demand/100))^25) * (input$goal/100)
     demandData <- data.frame(demand = demand,
                              Goal = "2050 Goal Demand")
     cleanData <- as.data.frame(cleanData)
@@ -604,7 +604,7 @@ server <- function(input, output, session) {
   ##This plot creates the annual growth required to meet the portfolio goals set in step 2
   output$timePlot <- renderPlot({
     #User demand goal
-    demand <- (4243 * (1 + (input$demand/100))^25) * (input$goal/100)
+    demand <- (US_demand * (1 + (input$demand/100))^25) * (input$goal/100)
     demandData <- data.frame(demand = demand,
                            Goal = "2050 Goal Demand")
     #Initalize reactive data
